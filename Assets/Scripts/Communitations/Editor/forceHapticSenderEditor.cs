@@ -36,11 +36,6 @@ public class forceHapticSenderEditor : Editor
                 labelProp.stringValue = ((char)('A' + i)).ToString();
             }
 
-            // Default ID if zero (to avoid having 0 as motor ID)
-            if (idProp.intValue == 0)
-            {
-                idProp.intValue = i + 1;
-            }
             
             // 电机启用/禁用控制（复选框），标题显示包含电机启用状态信息
             EditorGUILayout.BeginHorizontal();
